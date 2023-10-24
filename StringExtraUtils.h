@@ -1,5 +1,5 @@
-#ifndef STRING_UTILS_H
-#define STRING_UTILS_H
+#ifndef STRING_EXTRA_UTILS_H
+#define STRING_EXTRA_UTILS_H
 
 #include <stdexcept>
 #include <vector>

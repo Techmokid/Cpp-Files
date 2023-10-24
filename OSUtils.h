@@ -2,6 +2,10 @@
 #define OS_UTILS_H
 
 #include <string>
+#include <chrono>
+#include <thread>
+#include <filesystem>
+#include "consoleControl.h"
 
 #ifdef _WIN32
 std::string expandEnvironmentVariables(const std::string& inputPath) {
