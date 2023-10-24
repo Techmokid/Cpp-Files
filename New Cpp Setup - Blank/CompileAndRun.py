@@ -18,7 +18,7 @@ else:
     print("[SYSTEM]   Press 'Enter' to run program")
     input()
     os.system("cls")
-    os.system(os.getcwd() + "\\RunProg.exe")
+    os.system("\"" + os.getcwd() + "\\RunProg.exe" + "\"")
     print()
     print()
     print("-----------------------------")
