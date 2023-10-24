@@ -1,7 +1,7 @@
 import subprocess,os
 
 print("[COMPILER] Starting compilation...")
-result = subprocess.run("g++ *.cpp *.h -o RunProg.exe", stdout=subprocess.PIPE, stderr=subprocess.STDOUT).stdout.decode('utf-8')
+result = subprocess.run("g++ *.cpp *.h -lws2_32 -std=c++17 -o RunProg.exe", stdout=subprocess.PIPE, stderr=subprocess.STDOUT).stdout.decode('utf-8')
 
 if (result != ""):
     print("[COMPILER] A compilation error has occured")
