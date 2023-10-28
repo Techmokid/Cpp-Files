@@ -2,7 +2,7 @@
 #define CONSOLE_CONTROL_H
 
 #include <iostream>
-#include "StringUtils.h"
+#include "StringExtraUtils.h"
 
 #define printFormattingModuleLength 10
 #define PRINT_DEBUGGING_MSG

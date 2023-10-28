@@ -5,7 +5,7 @@
 #include <chrono>
 #include <thread>
 #include <filesystem>
-#include "consoleControl.h"
+#include "ConsoleControl.h"
 
 #ifdef _WIN32
 std::string expandEnvironmentVariables(const std::string& inputPath) {

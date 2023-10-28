@@ -97,19 +97,46 @@ std::vector<std::string> SplitString(std::string inputVal, char delimiter) {
 	return result;
 }
 
-std::string ASCII_To_Numeric(std::string x) {
+std::string RemoveSpecificCharacter(std::string x, char delim) {
 	std::string result = "";
 	for (int i = 0; i < x.length(); i++) {
-		if ((x[i] >= '0' && x[i] <= '9') || (x[i] == '.'))
+		if (x[i] != delim)
 			result += x[i];
 	}
 	return result;
 }
 
-std::string RemoveSpecificCharacter(std::string x, char delim) {
+std::string RemoveNumeric(std::string x) {
 	std::string result = "";
 	for (int i = 0; i < x.length(); i++) {
-		if (x[i] != delim)
+		if (!isdigit(x[i]))
+			result += x[i];
+	}
+	return result;
+}
+
+std::string RemoveAlpha(std::string x) {
+	std::string result = "";
+	for (int i = 0; i < x.length(); i++) {
+		if (!isalpha(x[i]))
+			result += x[i];
+	}
+	return result;
+}
+
+std::string RemoveAlphaNumeric(std::string x) {
+	std::string result = "";
+	for (int i = 0; i < x.length(); i++) {
+		if ((!isdigit(x[i])) && (!isalpha(x[i])))
+			result += x[i];
+	}
+	return result;
+}
+
+std::string RemoveNonAlphaNumeric(std::string x) {
+	std::string result = "";
+	for (int i = 0; i < x.length(); i++) {
+		if ((isdigit(x[i])) || (isalpha(x[i])))
 			result += x[i];
 	}
 	return result;

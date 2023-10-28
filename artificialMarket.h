@@ -3,7 +3,7 @@
 
 
 // Include statements
-#include "randomUtils.h"
+#include "RandomUtils.h"
 #include <vector>
 #include <cmath>
 

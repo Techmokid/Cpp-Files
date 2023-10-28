@@ -1,8 +1,7 @@
-// To use this file with windows, include " -lws2_32 " to your compile statements
-
 #ifndef SOCKET_H
 #define SOCKET_H
 
+// To use this file with windows, include " -lws2_32 " to your compile statements
 
 // Include statements
 #include <string>
